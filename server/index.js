@@ -17,7 +17,7 @@ import orderRouter from './route/order.route.js'
 
 const app = express()
 app.use(cors({
-    origin: 'http://localhost:5173', // Change this to match your frontend URL
+    origin: 'https://flash-buy-lhd2.vercel.app/',
     credentials: true, // Allow cookies & credentials
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization'
