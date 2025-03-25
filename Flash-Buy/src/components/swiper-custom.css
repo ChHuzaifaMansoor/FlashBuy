@@ -1,0 +1,49 @@
+/* Pagination bullets */
+.swiper-pagination-bullet {
+  background-color: #facc15; /* Tailwind yellow-400 */
+  width: 10px;
+  height: 10px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fbbf24; /* Tailwind yellow-500 */
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.7);
+}
+
+/* Navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #facc15; /* Tailwind yellow-400 */
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #fbbf24; /* Tailwind yellow-500 */
+  transform: scale(1.2);
+}
+
+/* Optional: Add a slight blur background to arrows */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+}
+
+/* Hide Scrollbars */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
